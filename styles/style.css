@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Vazir-Medium;
+    src: url(../fonts/Vazir-Medium.eot) format("eot"), url(../fonts/Vazir-Medium.woff) format("woff"), url(../fonts/Vazir-Medium.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+*,
+body {
+    font-family: Vazir-Medium;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: url("../images/bg.png");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.toast {
+    text-align: right;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    min-width: 500px;
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);
+}
+
+.toast::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    background-color: green;
+}
+
+.toast-icon {
+    position: absolute;
+    top: 45%;
+    right: 22px;
+    width: 14px;
+    height: 14px;
+    padding: 7px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.toast-type {
+    color: #3e3e3e;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.toast-message {
+    color: #878787;
+    font-size: 14px;
+}
+
+.toast-content {
+    padding: 0 60px;
+}
+
+.toast-close {
+    position: absolute;
+    left: 22px;
+    top: 45%;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    fill: #878787;
+    transform: translateY(-50%);
+}
+
+.toast-green .toast-icon {
+    background-color: #2bde3f;
+}
+
+.toast-green::before {
+    background-color: #2bde3f;
+}
+
+.toast-blue .toast-icon {
+    background-color: #1d72f3;
+}
+
+.toast-blue::before {
+    background-color: #1d72f3;
+}
+
+.toast-yellow .toast-icon {
+    background-color: #ffc007;
+}
+
+.toast-yellow::before {
+    background-color: #ffc007;
+}
+
